@@ -1,0 +1,2 @@
+# basicjs
+Basic JavaScript Utils
