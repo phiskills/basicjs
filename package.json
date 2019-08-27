@@ -1,0 +1,50 @@
+{
+  "name": "@phisuite/basic",
+  "version": "1.0.0",
+  "description": "Basic JavaScript Utils",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "browser": "dist/index.umd.js",
+  "scripts": {
+    "format": "prettier-standard 'src/**/*.js'",
+    "test": "jest",
+    "build": "rollup -c",
+    "dev": "rollup -c -w"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phisuite/basicjs.git"
+  },
+  "author": "VVF Luxembourg SA",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/phisuite/basicjs/issues"
+  },
+  "homepage": "https://github.com/phisuite/basicjs#readme",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-jest": "^24.9.0",
+    "jest": "^24.9.0",
+    "prettier-standard": "^11.0.0",
+    "rollup": "^1.20.2",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
+    ]
+  }
+}
